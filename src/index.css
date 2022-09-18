@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+body {
+  background-color: #222831;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #222831;
+  padding: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #5e646c;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00adb5;
+}
+
+
+
+/* Button */
+
+button {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 40px;
+  color: rgb(0, 0, 0);
+  font-size: 1.2rem;
+  cursor: pointer;
+  font-weight: light;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  font-weight: 300;
+}
+
+button:hover {
+  filter: brightness(0.7);
+}
+
+
+/* Nav */
+
+nav {
+  position: sticky;
+  background-color: #393E46;
+  top: 0;
+  padding: 10px 30px;
+  border-radius: 0 0 10px 10px;
+  z-index: 9999999999999999999;
+}
+
+nav .logos * {
+  height: 30px;
+}
+
+nav .logos {
+  display: inline-block;
+}
+
+nav .logos .aitchison {
+  padding-right: 15px;
+  border-right: 2px solid white;
+}
+
+nav .logos .yanam {
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+nav .links {
+  float: right;
+  transform: translateY(5px);  
+}
+
+nav .links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+  margin: 0 25px;
+}
+
+nav .links a:hover {
+  color: #00adb5;
+}
+
+nav .links .donate {
+  padding: 4px 80px;
+  margin: 0 10px;
+  color: lightgreen;
+}
+
+nav .links .donate:hover {
+  background: #00dbde;
+  border-radius: 5px;
+  color: black;
+}
+
+
+
+/* Main Header */
+
+.header .main {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.water {
+  background-image: url(./imgs/water.jpg);
+  background-repeat: repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-weight: 800;
+  -webkit-font-smoothing: antialiased;
+}
+
+.header .stick {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.header .main .text {
+  position: absolute;
+  top: 50%;
+  left: 7%;
+  transform: translate(0%, -50%);
+  z-index: 100;
+  text-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
+}
+
+.header .main .images {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  text-align: right;
+}
+
+.header .main .images img {
+  aspect-ratio: 2/1;
+  height: calc(100vh/2.4);
+  border-radius: 40px;
+  position: relative;
+}
+
+.header .main .images img:nth-child(1) {
+  transform: translate(-70%, 70%);
+  z-index: 9;
+}
+
+.header .main .images img:nth-child(3) {
+  height: calc(100vh/2);
+  transform: translate(0%, 20%);
+  z-index: 10;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
+}
+
+.header .main .images img:nth-child(5) {
+  transform: translate(-50%, 0%);
+  z-index: 9;
+}
+
+.header .flood {
+  background: rgba(173,216,230, 1);
+  z-index: 9999;
+  padding: 60px 20px;
+  position: relative;
+}
+
+.header .flood * {
+  color: black;
+}
+
+.header .flood .info {
+  font-size: 30px;
+  padding: 0 10%;
+}
+
+.header .content {
+  margin-top: 52%;
+  z-index: 9999999;
+  position: relative;
+  background: #222831;
+  padding: 20px;
+}
+
+.header .content svg {
+  position: absolute;
+  top: -220px;
+  transform: scale(1.05);
+}
+
+.header .content center {
+  z-index: 9999;
+  position: relative;
+  transform: translateY(-70px);
+}
+
+.header .content .damage img {
+  margin: 10px;
+}
+
+
+
+
+/* Utils */
+
+.f-g {
+  font-size: 8rem;
+}
+
+.f-m {
+  font-size: 4rem;
+}
+
+.green {
+  color: lightgreen;
+}
