@@ -63,13 +63,21 @@ button:hover {
 
 nav {
   position: sticky;
-  background-color: #393E46;
+  background-color: #393e46cf;
+  backdrop-filter: blur(10px);
   top: 0;
   left: 0;
   width: 100%;
   padding: 10px 30px;
   border-radius: 0 0 10px 10px;
   z-index: 9999999999999999999;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+nav.show {
+  visibility: visible;
   opacity: 1;
 }
 
@@ -150,8 +158,8 @@ nav .links .donate:hover {
 
 .header .main .text {
   position: absolute;
-  top: 50%;
-  left: 7%;
+  top: 40%;
+  left: 10%;
   transform: translate(0%, -50%);
   z-index: 100;
   text-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
@@ -208,7 +216,7 @@ nav .links .donate:hover {
   z-index: 9999999;
   position: relative;
   background: #222831;
-  padding: 20px;
+  /* padding: 20px; */
   width: 100vw;
 }
 
@@ -228,6 +236,78 @@ iframe {
   margin: 10px;
 }
 
+
+.flood-bg1 {
+  background: url(./imgs/flood/1.jpeg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding: 25vh 0px;
+}
+
+.flood-bg2 {
+  background: url(./imgs/flood/2.jpeg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding: 25vh 0px;
+}
+
+.flood-bg3 {
+  background: url(./imgs/flood/3.jpeg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding: 25vh 0px;
+}
+
+.flood-bg4 {
+  background: url(./imgs/flood/4.webp);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding: 25vh 0px;
+}
+
+.flood-bg5 {
+  background: url(./imgs/flood/5.webp);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding: 25vh 0px;
+}
+
+.back {
+  background: black;
+  display: inline-block;
+  padding: 0 10px;
+  transform: translate(-25px, -20px) rotate(1deg);
+  max-width: 80%;
+}
+
+.back.blur {
+  backdrop-filter: blur(20px);
+  background: rgba(0, 0, 0, 0.5) !important;
+}
+
+.back * {
+  transform: translate(25px, 20px) rotate(-1deg);
+}
+
+.underline {
+  color: whitesmoke;
+  text-decoration: underline black 15px;
+}
 
 
 
@@ -252,4 +332,8 @@ iframe {
 
 .green {
   color: lightgreen;
+}
+
+.red {
+  color: red;
 }
